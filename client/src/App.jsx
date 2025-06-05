@@ -7,6 +7,7 @@ import TrackPage from './features/track/pages';
 import FeedbackPage from './features/feedback/pages';
 import VoicePage from './features/voice/pages';
 import LoginPage from './features/auth/pages';
+import Home from './features/home/components/home';
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
             <Route path="/feedback" element={<FeedbackPage />} />
             <Route path="/voice" element={<VoicePage />} />
             <Route path="/login" element={<LoginPage />} />
+            <Route path="/" element={<Home/>}/>
+
             {/* Add more routes as needed */}
           </Routes>
         </main>
